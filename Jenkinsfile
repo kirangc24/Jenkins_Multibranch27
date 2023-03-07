@@ -6,6 +6,7 @@ node(' ')
 	}
     stage('Continuous Build_loans') 
 	{
+         input 'waiting for the approval'		
     sh label: '', script: 'mvn package'
 	}
 }
